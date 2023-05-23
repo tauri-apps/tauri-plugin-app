@@ -1,6 +1,6 @@
-import { invoke } from '@tauri-apps/api/tauri';
-
 // Copyright 2019-2023 Tauri Programme within The Commons Conservancy
+// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: MIT
 /**
  * Gets the application version.
  * @example
@@ -12,7 +12,7 @@ import { invoke } from '@tauri-apps/api/tauri';
  * @since 1.0.0
  */
 async function getVersion() {
-    return invoke("plugin:app|version");
+    return window.__TAURI_INVOKE__("plugin:app|version");
 }
 /**
  * Gets the application name.
@@ -25,7 +25,7 @@ async function getVersion() {
  * @since 1.0.0
  */
 async function getName() {
-    return invoke("plugin:app|name");
+    return window.__TAURI_INVOKE__("plugin:app|name");
 }
 /**
  * Gets the Tauri version.
@@ -39,7 +39,7 @@ async function getName() {
  * @since 1.0.0
  */
 async function getTauriVersion() {
-    return invoke("plugin:app|tauri_version");
+    return window.__TAURI_INVOKE__("plugin:app|tauri_version");
 }
 /**
  * Shows the application on macOS. This function does not automatically focus any specific app window.
@@ -53,7 +53,7 @@ async function getTauriVersion() {
  * @since 1.2.0
  */
 async function show() {
-    return invoke("plugin:app|show");
+    return window.__TAURI_INVOKE__("plugin:app|show");
 }
 /**
  * Hides the application on macOS.
@@ -67,7 +67,7 @@ async function show() {
  * @since 1.2.0
  */
 async function hide() {
-    return invoke("plugin:app|hide");
+    return window.__TAURI_INVOKE__("plugin:app|hide");
 }
 
 export { getName, getTauriVersion, getVersion, hide, show };
