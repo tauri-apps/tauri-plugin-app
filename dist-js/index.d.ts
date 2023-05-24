@@ -16,7 +16,7 @@ declare global {
  * const appVersion = await getVersion();
  * ```
  *
- * @since 1.0.0
+ * @since 2.0.0
  */
 declare function getVersion(): Promise<string>;
 /**
@@ -27,7 +27,7 @@ declare function getVersion(): Promise<string>;
  * const appName = await getName();
  * ```
  *
- * @since 1.0.0
+ * @since 2.0.0
  */
 declare function getName(): Promise<string>;
 /**
@@ -39,7 +39,7 @@ declare function getName(): Promise<string>;
  * const tauriVersion = await getTauriVersion();
  * ```
  *
- * @since 1.0.0
+ * @since 2.0.0
  */
 declare function getTauriVersion(): Promise<string>;
 /**
@@ -51,7 +51,7 @@ declare function getTauriVersion(): Promise<string>;
  * await show();
  * ```
  *
- * @since 1.2.0
+ * @since 2.0.0
  */
 declare function show(): Promise<void>;
 /**
@@ -63,7 +63,7 @@ declare function show(): Promise<void>;
  * await hide();
  * ```
  *
- * @since 1.2.0
+ * @since 2.0.0
  */
 declare function hide(): Promise<void>;
 export { getName, getVersion, getTauriVersion, show, hide };

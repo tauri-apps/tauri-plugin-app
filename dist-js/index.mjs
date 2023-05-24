@@ -9,7 +9,7 @@
  * const appVersion = await getVersion();
  * ```
  *
- * @since 1.0.0
+ * @since 2.0.0
  */
 async function getVersion() {
     return window.__TAURI_INVOKE__("plugin:app|version");
@@ -22,7 +22,7 @@ async function getVersion() {
  * const appName = await getName();
  * ```
  *
- * @since 1.0.0
+ * @since 2.0.0
  */
 async function getName() {
     return window.__TAURI_INVOKE__("plugin:app|name");
@@ -36,7 +36,7 @@ async function getName() {
  * const tauriVersion = await getTauriVersion();
  * ```
  *
- * @since 1.0.0
+ * @since 2.0.0
  */
 async function getTauriVersion() {
     return window.__TAURI_INVOKE__("plugin:app|tauri_version");
@@ -50,7 +50,7 @@ async function getTauriVersion() {
  * await show();
  * ```
  *
- * @since 1.2.0
+ * @since 2.0.0
  */
 async function show() {
     return window.__TAURI_INVOKE__("plugin:app|show");
@@ -64,7 +64,7 @@ async function show() {
  * await hide();
  * ```
  *
- * @since 1.2.0
+ * @since 2.0.0
  */
 async function hide() {
     return window.__TAURI_INVOKE__("plugin:app|hide");
